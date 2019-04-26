@@ -1,10 +1,9 @@
 package de.clearit.games.gameoflife;
 
-import java.util.List;
-
 public class CellImpl implements Cell {
 
     boolean alive = true;
+    boolean oracle;
 
     public boolean isAlive() {
         return this.alive;
@@ -14,8 +13,11 @@ public class CellImpl implements Cell {
         this.alive = alive;
     }
 
-    private List<Cell> getNeighbors() {
-        return null;
-        GameOfLife.
+    public void setOracle(boolean oracle) {
+        this.oracle = oracle;
+    }
+
+    public boolean getOracle() {
+        return oracle;
     }
 }
