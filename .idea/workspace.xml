@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6709c3e-7c5a-4b7c-8a7b-2528166ec8b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/CellImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/CellImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/GameOfLife.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/clearit/games/gameoflife/GameOfLifeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/clearit/games/gameoflife/GameOfLifeTests.java" afterDir="false" />
     </list>
@@ -20,7 +18,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -33,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/clearit/games/gameoflife/GameOfLifeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="47">
+              <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,18 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/CellImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#179#180#0" expanded="true" />
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -64,15 +52,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/GameOfLife.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="88" column="76" lean-forward="true" selection-start-line="88" selection-start-column="76" selection-end-line="88" selection-end-column="76" />
+            <state relative-caret-position="220">
+              <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
               <folding>
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
-                <element signature="e#1721#1722#0" expanded="true" />
-                <element signature="e#1759#1760#0" expanded="true" />
-                <element signature="e#1856#1857#0" expanded="true" />
-                <element signature="e#1906#1907#0" expanded="true" />
+                <element signature="e#1844#1845#0" expanded="true" />
+                <element signature="e#1882#1883#0" expanded="true" />
+                <element signature="e#1935#1936#0" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,6 +73,17 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gets</find>
+      <find>set</find>
+      <find>setOra</find>
+      <find>livin</find>
+      <find>oraclede</find>
+      <find>get</find>
+      <find>haspos</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,8 +108,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="968" />
-    <option name="height" value="550" />
+    <option name="x" value="-20" />
+    <option name="y" value="-20" />
+    <option name="width" value="3875" />
+    <option name="height" value="2195" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -121,58 +120,18 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="game-of-life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conways-game-of-life" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game-of-life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conways-game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game-of-life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conways-game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game-of-life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conways-game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game-of-life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="conways-game-of-life" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gameoflife" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,7 +145,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameOfLifeTests.spielregel1TestFehler">
+  <component name="RunManager" selected="JUnit.GameOfLifeTests.spielregel3TestPositiv">
+    <configuration name="GameOfLifeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="game-of-life" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.clearit.games.gameoflife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.clearit.games.gameoflife" />
+      <option name="MAIN_CLASS_NAME" value="de.clearit.games.gameoflife.GameOfLifeTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameOfLifeTests.spielregel1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="game-of-life" />
       <extension name="coverage">
@@ -219,10 +193,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameOfLifeTests.spielregel2TestPositiv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="game-of-life" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.clearit.games.gameoflife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.clearit.games.gameoflife" />
+      <option name="MAIN_CLASS_NAME" value="de.clearit.games.gameoflife.GameOfLifeTests" />
+      <option name="METHOD_NAME" value="spielregel2TestPositiv" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameOfLifeTests.spielregel3TestPositiv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="game-of-life" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.clearit.games.gameoflife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.clearit.games.gameoflife" />
+      <option name="MAIN_CLASS_NAME" value="de.clearit.games.gameoflife.GameOfLifeTests" />
+      <option name="METHOD_NAME" value="spielregel3TestPositiv" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameOfLifeTests.spielregel1TestFehler" />
+        <item itemvalue="JUnit.GameOfLifeTests.spielregel3TestPositiv" />
+        <item itemvalue="JUnit.GameOfLifeTests.spielregel2TestPositiv" />
+        <item itemvalue="JUnit.GameOfLifeTests" />
         <item itemvalue="JUnit.GameOfLifeTests.spielregel1Test" />
+        <item itemvalue="JUnit.GameOfLifeTests.spielregel1TestFehler" />
       </list>
     </recent_temporary>
   </component>
@@ -240,35 +249,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameOfLifeTests_spielregel1Test - 2019.04.26 at 13h 56m 35s.xml">
-      <configuration name="GameOfLifeTests.spielregel1Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1Test - 2019.04.26 at 14h 05m 17s.xml">
-      <configuration name="GameOfLifeTests.spielregel1Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1Test - 2019.04.26 at 14h 18m 15s.xml">
-      <configuration name="GameOfLifeTests.spielregel1Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1Test - 2019.04.26 at 14h 20m 32s.xml">
-      <configuration name="GameOfLifeTests.spielregel1Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1Test - 2019.04.26 at 14h 22m 12s.xml">
-      <configuration name="GameOfLifeTests.spielregel1Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1Test - 2019.04.26 at 14h 23m 34s.xml">
-      <configuration name="GameOfLifeTests.spielregel1Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1Test - 2019.04.26 at 14h 26m 42s.xml">
-      <configuration name="GameOfLifeTests.spielregel1Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1TestFehler - 2019.04.26 at 14h 41m 18s.xml">
+    <history-entry file="GameOfLifeTests_spielregel1TestFehler - 2019.04.29 at 13h 51m 58s.xml">
       <configuration name="GameOfLifeTests.spielregel1TestFehler" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1TestFehler - 2019.04.26 at 14h 43m 07s.xml">
+    <history-entry file="GameOfLifeTests_spielregel1TestFehler - 2019.04.29 at 14h 30m 14s.xml">
       <configuration name="GameOfLifeTests.spielregel1TestFehler" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameOfLifeTests_spielregel1TestFehler - 2019.04.26 at 14h 53m 46s.xml">
-      <configuration name="GameOfLifeTests.spielregel1TestFehler" configurationId="JUnit" />
+    <history-entry file="GameOfLifeTests - 2019.04.29 at 14h 32m 29s.xml">
+      <configuration name="GameOfLifeTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTests_spielregel2TestPositiv - 2019.04.29 at 14h 38m 02s.xml">
+      <configuration name="GameOfLifeTests.spielregel2TestPositiv" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTests_spielregel2TestPositiv - 2019.04.29 at 14h 40m 24s.xml">
+      <configuration name="GameOfLifeTests.spielregel2TestPositiv" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTests_spielregel2TestPositiv - 2019.04.29 at 14h 41m 28s.xml">
+      <configuration name="GameOfLifeTests.spielregel2TestPositiv" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTests_spielregel2TestPositiv - 2019.04.29 at 14h 44m 04s.xml">
+      <configuration name="GameOfLifeTests.spielregel2TestPositiv" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTests_spielregel3TestPositiv - 2019.04.29 at 15h 08m 59s.xml">
+      <configuration name="GameOfLifeTests.spielregel3TestPositiv" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTests_spielregel3TestPositiv - 2019.04.29 at 15h 09m 27s.xml">
+      <configuration name="GameOfLifeTests.spielregel3TestPositiv" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTests_spielregel3TestPositiv - 2019.04.29 at 15h 11m 08s.xml">
+      <configuration name="GameOfLifeTests.spielregel3TestPositiv" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -293,7 +302,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292517" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2462585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -348,6 +357,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/java/awt/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+          <folding>
+            <element signature="e#1507#1508#0" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -357,40 +377,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/CellImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/clearit/games/gameoflife/GameOfLife.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="88" column="76" lean-forward="true" selection-start-line="88" selection-start-column="76" selection-end-line="88" selection-end-column="76" />
+        <state relative-caret-position="220">
+          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
           <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
-            <element signature="e#1856#1857#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
+            <element signature="e#1882#1883#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/clearit/games/gameoflife/GameOfLifeTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="47">
+          <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
