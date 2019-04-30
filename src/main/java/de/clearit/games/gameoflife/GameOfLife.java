@@ -3,11 +3,14 @@ package de.clearit.games.gameoflife;
 import java.awt.*;
 
 public class GameOfLife {
-
     private Cell[][] cellBoard;
 
     public void init(int x, int y) {
         cellBoard = new Cell[x][y];
+        Gui.width = x * Draw.rectangleSize;
+        Gui.height = y * Draw.rectangleSize;
+        Gui g = new Gui();
+        g.create();
 
         // In jedes Feld/ in jeden Index eine tote Zelle setzen
 //        for (int i = 0; i < x; i++) {
@@ -111,5 +114,12 @@ public class GameOfLife {
 
             }
         }
+    }
+    public int breiteSpielfeld() {
+        return cellBoard.length;
+    }
+
+    public int höheSpielfeld(int b) {
+        return cellBoard[b].length;
     }
 }
