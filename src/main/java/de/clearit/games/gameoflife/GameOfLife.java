@@ -10,6 +10,11 @@ public class GameOfLife {
         cellBoard = new Cell[x][y];
 
         // In jedes Feld/ in jeden Index eine tote Zelle setzen
+//        for (int i = 0; i < x; i++) {
+//            for (int j = 0; i < y; i++) {
+//                cellBoard[i][j] = new CellImpl();
+//            }
+//        }
     }
 
     // Anzahl der lebenden Zellen um die betrachtete Zelle; benötigt für die Entscheidung ob sie lebt oder stirbt

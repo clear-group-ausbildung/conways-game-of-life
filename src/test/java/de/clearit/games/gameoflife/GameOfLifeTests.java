@@ -19,14 +19,17 @@ public class GameOfLifeTests {
         gameOfLife.init(100, 100);
 
         Cell cell = new CellImpl();
-        cell.setAlive(false);
+        cell.setAlive(true);
         Cell cell2 = new CellImpl();
-        cell2.setAlive(false);
+        cell2.setAlive(true);
+        Cell cell3 = new CellImpl();
+        cell3.setAlive(true);
 
-        gameOfLife.setCellAt(new Point(0, 0), cell);
-        gameOfLife.setCellAt(new Point(0, 1), new CellImpl());
-        gameOfLife.setCellAt(new Point(1, 0), new CellImpl());
-        gameOfLife.setCellAt(new Point(1, 1), new CellImpl());
+
+        gameOfLife.setCellAt(new Point(0, 0), new CellImpl());
+        gameOfLife.setCellAt(new Point(0, 1), cell);
+        gameOfLife.setCellAt(new Point(1, 0), cell2);
+        gameOfLife.setCellAt(new Point(1, 1), cell3);
 
         gameOfLife.markOfDeath();
 
@@ -50,9 +53,9 @@ public class GameOfLifeTests {
         gameOfLife.init(100, 100);
 
         Cell cell = new CellImpl();
-        cell.setAlive(false);
+        cell.setAlive(true);
         Cell cell2 = new CellImpl();
-        cell2.setAlive(false);
+        cell2.setAlive(true);
 
         gameOfLife.setCellAt(new Point(0, 0), cell);
         gameOfLife.setCellAt(new Point(0, 1), cell2);
@@ -84,9 +87,9 @@ public class GameOfLifeTests {
         gameOfLife.naturalSelection();
 
         System.out.print("Natural Selection:\t\t" );
-        System.out.print(cell.isAlive() + " ");                         //f
+        System.out.print(cell.isAlive() + " ");                               //f
         System.out.print(gameOfLife.getSalAd(0, 0).isAlive() + " ");    //f
-        System.out.print(cell2.isAlive() + " ");                        //f
+        System.out.print(cell2.isAlive() + " ");                              //f
         System.out.print(gameOfLife.getSalAd(0, 1).isAlive() + " ");    //f
         System.out.print(gameOfLife.getSalAd(1, 0).isAlive() + " ");    //f
         System.out.print(gameOfLife.getSalAd(1, 1).isAlive() + " ");    //f
@@ -102,17 +105,15 @@ public class GameOfLifeTests {
     @DisplayName("Spielregel 2, Test: Positiv")
     public void spielregel2TestPositiv() {
 
-        // Wenn eine Zelle nur eine oder weniger lebende Nachbarn hat stirbt sie in der Folgegeneration an Einsamkeit
+        // Wenn eine Zelle nur einen oder weniger lebende Nachbarn hat stirbt sie in der Folgegeneration an Einsamkeit
 
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
 
         // Nur 2 lebende Zellen nebeneinander
-        Cell cell = new CellImpl();
-        Cell cell2 = new CellImpl();
 
-        gameOfLife.setCellAt(new Point(0, 0), cell);
-        gameOfLife.setCellAt(new Point(0, 1), cell2);
+        gameOfLife.setCellAt(new Point(0, 0), new CellImpl());
+        gameOfLife.setCellAt(new Point(0, 1), new CellImpl());
 
         // Todesmarke setzen
         gameOfLife.markOfDeath();
@@ -120,11 +121,11 @@ public class GameOfLifeTests {
         // Neue Generation
         gameOfLife.naturalSelection();
 
-        System.out.print(cell.isAlive() + " ");    //f
-        System.out.print(cell2.isAlive() + " ");    //f
+        System.out.print(gameOfLife.getSalAd(0, 0).isAlive() + " ");    //f
+        System.out.print(gameOfLife.getSalAd(0, 1).isAlive() + " ");    //f
 
         // Zelle stirbt
-        Assertions.assertFalse(cell.isAlive());
+        Assertions.assertFalse(gameOfLife.getSalAd(0, 0).isAlive());
 
 
     }
@@ -135,14 +136,18 @@ public class GameOfLifeTests {
 
         // Lebende Zelle mit 2 oder 3 lebenden Nachbarn bleibt in der Folgegeneration am Leben
 
-        // 4 lebende Zellen die miteinander benachbaart sind
+        // 4 lebende Zellen die miteinander benachbart sind
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
 
         Cell cell = new CellImpl();
+        cell.setAlive(true);
         Cell cell2 = new CellImpl();
+        cell2.setAlive(true);
         Cell cell3 = new CellImpl();
+        cell3.setAlive(true);
         Cell cell4 = new CellImpl();
+        cell4.setAlive(true);
 
         gameOfLife.setCellAt(new Point(0, 0), cell);
         gameOfLife.setCellAt(new Point(0, 1), cell2);

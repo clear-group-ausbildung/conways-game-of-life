@@ -2,7 +2,7 @@ package de.clearit.games.gameoflife;
 
 public class CellImpl implements Cell {
 
-    boolean alive = true;
+    boolean alive = false;
     boolean oracle;
 
     public boolean isAlive() {
