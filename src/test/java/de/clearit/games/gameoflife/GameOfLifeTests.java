@@ -92,7 +92,7 @@ public class GameOfLifeTests {
         System.out.print(gameOfLife.getSalAd(1, 1).isAlive() + " ");    //f
 
 
-        // Erwartung: Zelle neu geboren
+        // Erwartung: Zelle stirbt
         Assertions.assertFalse(cell.isAlive());
 
 
@@ -102,22 +102,28 @@ public class GameOfLifeTests {
     @DisplayName("Spielregel 2, Test: Positiv")
     public void spielregel2TestPositiv() {
 
+        // Wenn eine Zelle nur eine oder weniger lebende Nachbarn hat stirbt sie in der Folgegeneration an Einsamkeit
+
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
 
+        // Nur 2 lebende Zellen nebeneinander
         Cell cell = new CellImpl();
         Cell cell2 = new CellImpl();
 
         gameOfLife.setCellAt(new Point(0, 0), cell);
         gameOfLife.setCellAt(new Point(0, 1), cell2);
 
+        // Todesmarke setzen
         gameOfLife.markOfDeath();
 
+        // Neue Generation
         gameOfLife.naturalSelection();
 
         System.out.print(cell.isAlive() + " ");    //f
         System.out.print(cell2.isAlive() + " ");    //f
 
+        // Zelle stirbt
         Assertions.assertFalse(cell.isAlive());
 
 
@@ -127,6 +133,9 @@ public class GameOfLifeTests {
     @DisplayName("Spielregel 3, Test: Positiv")
     public void spielregel3TestPositiv() {
 
+        // Lebende Zelle mit 2 oder 3 lebenden Nachbarn bleibt in der Folgegeneration am Leben
+
+        // 4 lebende Zellen die miteinander benachbaart sind
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
 
@@ -139,8 +148,10 @@ public class GameOfLifeTests {
         gameOfLife.setCellAt(new Point(0, 1), cell2);
          gameOfLife.setCellAt(new Point(1, 0), cell3);
 
+         // Todesmarke setzen
         gameOfLife.markOfDeath();
 
+        // Nächste Generation
         gameOfLife.naturalSelection();
 
         System.out.print(cell.isAlive() + " ");
@@ -148,6 +159,7 @@ public class GameOfLifeTests {
         System.out.print(cell3.isAlive() + " ");
         System.out.print(cell4.isAlive() + " ");
 
+        // Zelle überlebt
         Assertions.assertTrue(cell.isAlive());
     }
 }

@@ -12,12 +12,10 @@ public class GameOfLife {
         // In jedes Feld/ in jeden Index eine tote Zelle setzen
     }
 
-
+    // Anzahl der lebenden Zellen um die betrachtete Zelle; benötigt für die Entscheidung ob sie lebt oder stirbt
     private int getCountOfLivingNeighborCells(Point cellPosition) {
-
         int count = 0;
         // suche in Array
-
         // Zellen oben
         for (int i = cellPosition.x - 1; i < ((cellPosition.x - 1) + 3); i++) {
             if (hasPositionLivingCell(new Point(i, cellPosition.y - 1))) {
@@ -37,10 +35,10 @@ public class GameOfLife {
         if (hasPositionLivingCell(new Point(cellPosition.x + 1, cellPosition.y))) {
             count++;
         }
-
         return count;
     }
 
+    // Überprüft ob der benachbaarte betrachtete Punkt eine lebende Zelle ist, da nur diese Relevanz haben
     private boolean hasPositionLivingCell(Point cellPosition) {
         try {
             Cell checkCell = cellBoard[cellPosition.x][cellPosition.y];
@@ -55,6 +53,7 @@ public class GameOfLife {
         return false;
     }
 
+    // Gibt an ob Zelle stirbt oder lebt im nächsten Zyklus
     public boolean oracleDecision(int livingNeighborsCount) {
         if (livingNeighborsCount < 2 || livingNeighborsCount > 3) {
             return false;
@@ -65,14 +64,17 @@ public class GameOfLife {
         }
     }
 
+    // Gibt die Zelle an den eingegebenen Koordinaten im Zell-Grid zurück
     public Cell getSalAd(int x, int y) {
         return cellBoard[x][y];
     }
 
+    // Setzt eine übergebene Zelle an eine übergebene Koordinate im Zell-Grid
     public void setCellAt(Point point, Cell cell) {
         cellBoard[point.x][point.y] = cell;
     }
 
+    // Markiert die Zellen wie sie sich im nächsten Zyklus verändern werden
     public void markOfDeath() {
         for (int row = 0; row < cellBoard.length; row++) {
             for (int column = 0; column < cellBoard[row].length; column++) {
@@ -92,6 +94,7 @@ public class GameOfLife {
         }
     }
 
+    // Setzt den Zustand der Zelle auf den durch markOfDeath vorausgesagten Zustand
     public void naturalSelection() {
         for (int row = 0; row < cellBoard.length; row++) {
             for (int column = 0; column < cellBoard[row].length; column++) {
