@@ -9,6 +9,11 @@ import java.awt.*;
 
 public class GameOfLifeTests {
 
+
+//****************************************************************************************************************************//
+//*******************************************************SPIELREGEL1**********************************************************//
+//****************************************************************************************************************************//
+
     @Test
     @DisplayName("Spielregel 1, Test: Positiv")
     public void spielregel1TestPositiv() {
@@ -101,6 +106,10 @@ public class GameOfLifeTests {
 
     }
 
+//****************************************************************************************************************************//
+//*******************************************************SPIELREGEL2**********************************************************//
+//****************************************************************************************************************************//
+
     @Test
     @DisplayName("Spielregel 2, Test: Positiv")
     public void spielregel2TestPositiv() {
@@ -129,6 +138,10 @@ public class GameOfLifeTests {
 
 
     }
+
+//****************************************************************************************************************************//
+//*******************************************************SPIELREGEL3**********************************************************//
+//****************************************************************************************************************************//
 
     @Test
     @DisplayName("Spielregel 3, Test: Positiv")
@@ -167,4 +180,56 @@ public class GameOfLifeTests {
         // Zelle überlebt
         Assertions.assertTrue(cell.isAlive());
     }
+
+//****************************************************************************************************************************//
+//*******************************************************SPIELREGEL4**********************************************************//
+//****************************************************************************************************************************//
+
+    @Test
+    @DisplayName("Spielregel 4, Test: Positiv")
+    public void spielregel4TestPositiv() {
+        // Wenn eine Zelle mehr als 3 lebende Zellen als Nachbarn hat, stirbt diese Zelle an Überfremdung
+
+        GameOfLife gameOfLife = new GameOfLife();
+        gameOfLife.init(100, 100);
+
+        // 6 lebende Zellen erstellt - 2 sollen an Überfremdung sterben
+        Cell cell = new CellImpl();
+        cell.setAlive(true);
+        Cell cell2 = new CellImpl();
+        cell2.setAlive(true);
+        Cell cell3 = new CellImpl();
+        cell3.setAlive(true);
+        Cell cell4 = new CellImpl();
+        cell4.setAlive(true);
+        Cell cell5 = new CellImpl();
+        cell5.setAlive(true);
+        Cell cell6 = new CellImpl();
+        cell6.setAlive(true);
+
+        gameOfLife.setCellAt(new Point(1, 1), cell);
+        gameOfLife.setCellAt(new Point(0, 0), cell2);
+        gameOfLife.setCellAt(new Point(0, 1), cell3);
+        gameOfLife.setCellAt(new Point(0, 2), cell4);
+        gameOfLife.setCellAt(new Point(1, 0), cell5);
+        gameOfLife.setCellAt(new Point(1, 2), cell6);
+
+        // Todesmarke setzen
+        gameOfLife.markOfDeath();
+
+        // Nächste Generation
+        gameOfLife.naturalSelection();
+
+        // Zelle 1 & 3 sterben wegen Überfremdung (5 lebende Nachbarn)
+        System.out.print(cell.isAlive() + " ");
+        System.out.print(cell2.isAlive() + " ");
+        System.out.print(cell3.isAlive() + " ");
+        System.out.print(cell4.isAlive() + " ");
+        System.out.print(cell5.isAlive() + " ");
+        System.out.print(cell6.isAlive() + " ");
+
+        // Zelle stirbt
+        Assertions.assertFalse(cell.isAlive());
+    }
+
 }
