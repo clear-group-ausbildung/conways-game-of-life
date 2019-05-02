@@ -7,6 +7,8 @@ public class GameOfLife {
 
     public void init(int x, int y) {
         cellBoard = new Cell[x][y];
+        Draw.anzahlX = x;
+        Draw.anzahlY = y;
         Gui.width = x * Draw.rectangleSize;
         Gui.height = y * Draw.rectangleSize;
         Gui g = new Gui();

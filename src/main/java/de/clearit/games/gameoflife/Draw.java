@@ -5,6 +5,7 @@ import java.awt.*;
 
 public class Draw extends JLabel {
 
+    static int anzahlX, anzahlY; //test
     static int rectangleSize = 25;
     Point p;
 
@@ -25,27 +26,25 @@ public class Draw extends JLabel {
             }
         }
 
-
-        //Draw Cell
-
-        for (int i = 0; i <; i++) {
-            for (int j = 0; j < Gui.height; j++) {
-                g.drawRect(i * rectangleSize, j * rectangleSize, rectangleSize, rectangleSize);
-            }
-        }
-
-        g.setColor(new Color(0, 153, 0));
-        p = Snake.ptc(Snake.head.getX(), Snake.head.getY());
-        g.fillRect(p.x, p.y, rectangleSize, rectangleSize);
-
         //Draw Border
         g.setColor(Color.RED);
         g.drawRect(0, 0, Gui.width, Gui.height);
 
+//        g.setColor(new Color(0, 153, 0));
+//        p = Snake.ptc(Snake.head.getX(), Snake.head.getY());
+//        g.fillRect(p.x, p.y, rectangleSize, rectangleSize);
+
         repaint();
     }
 
-    public void printCell() {
+    public void printCell(Cell[][] cellBoard) {
+        //Draw Cell
+        for (int i = 0; i < anzahlX; i++) {
+            for (int j = 0; j < anzahlY; j++) {
+                if (cellBoard[i][j].isAlive()) {
 
+                }
+            }
+        }
     }
 }
