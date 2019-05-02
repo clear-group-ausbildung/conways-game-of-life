@@ -5,8 +5,9 @@ import java.awt.*;
 
 public class Draw extends JLabel {
 
-    static int rectangleSize = 40;
+    static int rectangleSize = 25;
     Point p;
+
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
@@ -24,15 +25,27 @@ public class Draw extends JLabel {
             }
         }
 
+
         //Draw Cell
-        //g.setColor(new Color(0, 153, 0));
-        // p = Snake.ptc(Snake.head.getX(), Snake.head.getY());
-       // g.fillRect(p.x, p.y, rectangleSize, rectangleSize);
+
+        for (int i = 0; i <; i++) {
+            for (int j = 0; j < Gui.height; j++) {
+                g.drawRect(i * rectangleSize, j * rectangleSize, rectangleSize, rectangleSize);
+            }
+        }
+
+        g.setColor(new Color(0, 153, 0));
+        p = Snake.ptc(Snake.head.getX(), Snake.head.getY());
+        g.fillRect(p.x, p.y, rectangleSize, rectangleSize);
 
         //Draw Border
         g.setColor(Color.RED);
-        g.drawRect(0,0, Gui.width + 5, Gui.height+5);
+        g.drawRect(0, 0, Gui.width, Gui.height);
 
         repaint();
+    }
+
+    public void printCell() {
+
     }
 }

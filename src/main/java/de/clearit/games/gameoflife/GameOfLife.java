@@ -46,7 +46,7 @@ public class GameOfLife {
         return count;
     }
 
-    // Überprüft ob der benachbaarte betrachtete Punkt eine lebende Zelle ist, da nur diese Relevanz haben
+    // Überprüft ob der benachbarte betrachtete Punkt eine lebende Zelle ist, da nur diese Relevanz haben
     private boolean hasPositionLivingCell(Point cellPosition) {
         try {
             Cell checkCell = cellBoard[cellPosition.x][cellPosition.y];
@@ -115,6 +115,7 @@ public class GameOfLife {
             }
         }
     }
+
     public int breiteSpielfeld() {
         return cellBoard.length;
     }

@@ -17,8 +17,8 @@ public class GameOfLifeTests {
     @Test
     @DisplayName("Spielregel 1, Test: Positiv")
     public void spielregel1TestPositiv() {
-        // Eine tote Zelle mit genau drei lebenden Nachbarn
-        // wird in der Folgegeneration neu geboren.
+        /* Eine tote Zelle mit genau drei lebenden Nachbarn
+           wird in der Folgegeneration neu geboren. */
 
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
@@ -43,8 +43,6 @@ public class GameOfLifeTests {
 
         // Erwartung: Zelle neu geboren
         Assertions.assertTrue(cell.isAlive());
-
-
     }
 
     @Test
@@ -91,7 +89,7 @@ public class GameOfLifeTests {
         // Neue Generation
         gameOfLife.naturalSelection();
 
-        System.out.print("Natural Selection:\t\t" );
+        System.out.print("Natural Selection:\t\t");
         System.out.print(cell.isAlive() + " ");                               //f
         System.out.print(gameOfLife.getSalAd(0, 0).isAlive() + " ");    //f
         System.out.print(cell2.isAlive() + " ");                              //f
@@ -147,9 +145,8 @@ public class GameOfLifeTests {
     @DisplayName("Spielregel 3, Test: Positiv")
     public void spielregel3TestPositiv() {
 
-        // Lebende Zelle mit 2 oder 3 lebenden Nachbarn bleibt in der Folgegeneration am Leben
-
-        // 4 lebende Zellen die miteinander benachbart sind
+        /* Lebende Zelle mit 2 oder 3 lebenden Nachbarn bleibt in der Folgegeneration am Leben
+           4 lebende Zellen die miteinander benachbart sind */
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
 
@@ -164,9 +161,9 @@ public class GameOfLifeTests {
 
         gameOfLife.setCellAt(new Point(0, 0), cell);
         gameOfLife.setCellAt(new Point(0, 1), cell2);
-         gameOfLife.setCellAt(new Point(1, 0), cell3);
+        gameOfLife.setCellAt(new Point(1, 0), cell3);
 
-         // Todesmarke setzen
+        // Todesmarke setzen
         gameOfLife.markOfDeath();
 
         // Nächste Generation

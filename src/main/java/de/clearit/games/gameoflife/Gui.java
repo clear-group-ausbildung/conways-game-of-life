@@ -9,15 +9,14 @@ public class Gui {
     public static int width, height;
 
     public void create() {
-        d = new Draw();
-        d.setBounds(0, 0, width, height);
-        jf.setSize(d.getWidth() + 20 , d.getHeight());
-//        jf.setMinimumSize(new Dimension(width, height));
+        jf.setSize(1920, 1080);
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jf.setLocationRelativeTo(null);
         jf.setLayout(null);
-        jf.setResizable(true);
+        jf.setResizable(false);
 
+        d = new Draw();
+        d.setBounds(0, 0, width, height);
         d.setVisible(true);
         jf.add(d);
 
