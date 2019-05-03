@@ -23,15 +23,15 @@ public class GameOfLifeTests {
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
 
-        Cell cell = new CellImpl();
-        cell.setAlive(true);
-        Cell cell2 = new CellImpl();
-        cell2.setAlive(true);
-        Cell cell3 = new CellImpl();
-        cell3.setAlive(true);
+        Cell cell = new CellImpl(true);
+
+        Cell cell2 = new CellImpl(true);
+
+        Cell cell3 = new CellImpl(true);
 
 
-        gameOfLife.setCellAt(new Point(0, 0), new CellImpl());
+
+        gameOfLife.setCellAt(new Point(0, 0), new CellImpl(false));
         gameOfLife.setCellAt(new Point(0, 1), cell);
         gameOfLife.setCellAt(new Point(1, 0), cell2);
         gameOfLife.setCellAt(new Point(1, 1), cell3);
@@ -55,15 +55,15 @@ public class GameOfLifeTests {
         GameOfLife gameOfLife = new GameOfLife();
         gameOfLife.init(100, 100);
 
-        Cell cell = new CellImpl();
-        cell.setAlive(true);
-        Cell cell2 = new CellImpl();
-        cell2.setAlive(true);
+        Cell cell = new CellImpl(true);
+
+        Cell cell2 = new CellImpl(true);
+
 
         gameOfLife.setCellAt(new Point(0, 0), cell);
         gameOfLife.setCellAt(new Point(0, 1), cell2);
-        gameOfLife.setCellAt(new Point(1, 0), new CellImpl());
-        gameOfLife.setCellAt(new Point(1, 1), new CellImpl());
+        gameOfLife.setCellAt(new Point(1, 0), new CellImpl(false));
+        gameOfLife.setCellAt(new Point(1, 1), new CellImpl(false));
 
         // Zellen vor der Selektion
         System.out.print("Before:\t\t\t\t\t");
@@ -119,8 +119,8 @@ public class GameOfLifeTests {
 
         // Nur 2 lebende Zellen nebeneinander
 
-        gameOfLife.setCellAt(new Point(0, 0), new CellImpl());
-        gameOfLife.setCellAt(new Point(0, 1), new CellImpl());
+        gameOfLife.setCellAt(new Point(0, 0), new CellImpl(false));
+        gameOfLife.setCellAt(new Point(0, 1), new CellImpl(false));
 
         // Todesmarke setzen
         gameOfLife.markOfDeath();

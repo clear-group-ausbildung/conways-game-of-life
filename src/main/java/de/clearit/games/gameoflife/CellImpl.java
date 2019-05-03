@@ -5,6 +5,13 @@ public class CellImpl implements Cell {
     boolean alive = false;
     boolean oracle;
 
+    CellImpl(boolean alive) {
+        this.alive = alive;
+    }
+    CellImpl() {
+
+    }
+
     public boolean isAlive() {
         return this.alive;
     }

@@ -1,25 +1,25 @@
 package de.clearit.games.gameoflife;
 
 import java.awt.*;
+import java.util.Random;
 
 public class GameOfLife {
     private Cell[][] cellBoard;
+    Random zahl = new Random();
 
     public void init(int x, int y) {
         cellBoard = new Cell[x][y];
-        Draw.anzahlX = x;
-        Draw.anzahlY = y;
-        Gui.width = x * Draw.rectangleSize;
-        Gui.height = y * Draw.rectangleSize;
-        Gui g = new Gui();
-        g.create();
-
         // In jedes Feld/ in jeden Index eine tote Zelle setzen
-//        for (int i = 0; i < x; i++) {
-//            for (int j = 0; i < y; i++) {
-//                cellBoard[i][j] = new CellImpl();
-//            }
-//        }
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                int zufall = zahl.nextInt(2)+1;
+                if (zufall == 1) {
+                    cellBoard[i][j] = new CellImpl(false);
+                } else {
+                    cellBoard[i][j] = new CellImpl(true);
+                }
+            }
+        }
     }
 
     // Anzahl der lebenden Zellen um die betrachtete Zelle; benötigt für die Entscheidung ob sie lebt oder stirbt
@@ -124,5 +124,38 @@ public class GameOfLife {
 
     public int höheSpielfeld(int b) {
         return cellBoard[b].length;
+    }
+
+    public Cell[][] getCellBoard() {
+        return cellBoard;
+    }
+
+    public String toString() {
+
+        StringBuilder sb = new StringBuilder();
+        char blank = 9723;
+        char filled = 9724;
+
+        for (int i = 0; i < cellBoard.length; i++) {
+            for (int j = 0; j < cellBoard[i].length; j++) {
+                if (cellBoard[i][j].isAlive()) {
+                    sb.append(filled);
+                    if (j == cellBoard[i].length - 1) {
+                        sb.append("\n");
+                    }
+                } else {
+                    sb.append(blank);
+                    if (j == cellBoard[i].length - 1) {
+                        sb.append("\n");
+                    }
+                }
+            }
+        }
+        return sb.toString();
+    }
+
+
+    public void setCellAlive(int x, int y) {
+        this.cellBoard[x][y] = new CellImpl(true);
     }
 }
